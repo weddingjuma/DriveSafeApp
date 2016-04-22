@@ -58,7 +58,8 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     protected MediaPlayer mPlayer;
     private CameraSourcePreview mPreview;
     private GraphicOverlay mGraphicOverlay;
-
+    private boolean flag = false;
+    private int count=0;
     private static final int RC_HANDLE_GMS = 9001;
     // permission request codes need to be < 256
     private static final int RC_HANDLE_CAMERA_PERM = 2;
@@ -294,18 +295,8 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     private class GraphicFaceTracker extends Tracker<Face> {
         private GraphicOverlay mOverlay;
         private FaceGraphic mFaceGraphic;
-//        private int mCount1 = 0;
-//        private int mCount2 = 0;
-        private ArrayList<Pair> mHistory = new ArrayList<Pair>();
 
-//        protected class Tuple {
-//            long time;
-//            boolean eyeCheckResult;
-//            Tuple(long timeStamp,boolean eyeClosed){
-//                time = timeStamp;
-//                eyeCheckResult = eyeClosed;
-//            }
-//        }
+        private ArrayList<Pair> mHistory = new ArrayList<Pair>();
 
         GraphicFaceTracker(GraphicOverlay overlay) {
             mOverlay = overlay;
@@ -325,18 +316,43 @@ public final class FaceTrackerActivity extends AppCompatActivity {
          */
         @Override
         public void onUpdate(FaceDetector.Detections<Face> detectionResults, Face face) {
+            double right = face.getIsRightEyeOpenProbability();
+            double left = face.getIsLeftEyeOpenProbability();
+            //Log.e(TAG, "Right eye = " + right + ", left eye = " + left);
+            boolean eyeClosed = (right < 0.1) && (left < 0.1);
+
+            Pair<Long, Boolean> entry = new Pair<>(new Date().getTime(), eyeClosed);
+            mHistory.add(entry);
+
             mOverlay.add(mFaceGraphic);
             mFaceGraphic.updateFace(face);
-//            Added logic for eyeClose check
-//            long epoch = System.currentTimeMillis();
-//            boolean eyeClosed = mFaceGraphic.eyeClosed();
-            Pair<Long, Boolean> entry = new Pair<>(new Date().getTime(), mFaceGraphic.eyeClosed());
-            mHistory.add(entry);
+
+            if (eyeClosed){
+                Log.e(TAG, eyeClosed + "");
+
+            }
+            if( flag == false && eyeClosed == true ){
+                flag = true;
+                count=1;
+            }else if(flag == true && eyeClosed == true){
+                count++;
+                if(count >=5){
+                    Log.e(TAG, "Alarm!!!!!!!!");
+                    count=0;
+                    flag = false;
+                }
+            }else if(flag == true && eyeClosed == false) {
+                if (count < 5) {
+                    flag = false;
+                    count = 0;
+                }
+            }    
 
             if(mHistory.size() ==100){
                 Pair<Long, Boolean> last = mHistory.get(mHistory.size() -1 );
                 Pair<Long, Boolean> first = mHistory.get(0);
                 Log.e(TAG, last.first - first.first + "");
+                mHistory.clear();
             }
 
             //
@@ -363,16 +379,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
 //            }
 
         }
-        /**
-         * request eye closed check //Added by Hongmei
-         */
-//        public boolean onEyeCheck(){
-//
-//            if (!mFaceGraphic.eyeClosed()) return false;
-//            else {
-//                return true;
-//            }
-//        }
+
         /**
          * Hide the graphic when the corresponding face was not detected.  This can happen for
          * intermediate frames temporarily (e.g., if the face was momentarily blocked from
