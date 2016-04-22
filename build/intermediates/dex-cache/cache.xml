@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-d5f9a035bd71f4dfc21b0da5d248832b0a84306c.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-80c7b646f8c9ba60d347da0474d807ae31d96163.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-f261527f103a289fdb1392c6abf10828bd938236.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-c97204da7b50d931c3ebcb7bf3e0785ca354d8c2.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-74bb6261b93ba911d24a5296b3317e3450e668ae.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-52224388e629e140e9d2096e86f391c0c5e46aec.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-b547f38b55926645e404b880967ba4c18b7fb073.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-581c97dbd8cfa067d37ab5068c8ab81bfe61068a.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-d2b3a4cc642dd2579826f8d51b81c70728e46610.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c2ac04c5b232f6f0658ee4f1c13be09cd76406e2">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-866673bdfa1e6bed400fcd2f32835006b0e9860c.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-3b80179431b447ccb479f05437149c6f8481b24b.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-d4d6262dd1cba02c6251808879e300e9e16915b8.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-6d413e56784178289f3da069f40d350196bda1be.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-2fcf891b8dd19a5d5729776e2353aa0477ad791b.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-ad8c4027c19b6489e0e1ed3b33403ce1aa6202e5.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-28b24b1ed163e37aa4e3904162e8dc676000df6c.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-5535d71437ff352611a657f7de4b2b559189f577.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-d1ecb8b59bfdcd15a90bdb9b71d25d53c27da612.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2e24e5f1b11170163028277de63f709e42525db4">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-9714747febe8745923b20b2104cf0be603b3cbe9.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-1c6cb4ef5eed6dc0df2cd4ab9bf8c230e9a192ee.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-b974f9bd3548dcbab1e1d03fbb9b3bb3f17bc28b.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-48d45649d7171c89b6bd3d9a566b3c15aee3513c.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-15ae56e73c3d4e0033522c60ba865996f6b40cde.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\design\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-1f2aea09fed1eb50ff8b778eb1ccb3ea76280350.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1-cfd96bbf8a22e026c55dd829e341f194a6683c21.jar" />
+    </item>
+    <item
+        jar="D:\Users\T440\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1-0372d6f7eba08b36b454f15a9ece685d9a03c587.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-001e60d083b5f6aeca60af140743d902bb72c0be.jar" />
+    </item>
+    <item
+        jar="F:\workspace\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="F:\workspace\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-4ddea74da7201c06a05637c1f77f12755a881450.jar" />
+    </item>
+
+</items>
