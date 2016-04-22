@@ -19,12 +19,15 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.speech.RecognizerIntent;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -46,6 +49,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 
 /**
  * Activity for the face tracker app.  This app detects faces with the rear facing camera, and draws
@@ -53,6 +57,8 @@ import java.util.HashMap;
  */
 public final class FaceTrackerActivity extends AppCompatActivity {
     private static final String TAG = "FaceTracker";
+
+    private final int REQ_CODE_SPEECH_INPUT = 100;
 
     private CameraSource mCameraSource = null;
     protected MediaPlayer mPlayer;
@@ -273,6 +279,20 @@ public final class FaceTrackerActivity extends AppCompatActivity {
         }
     }
 
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
+            case REQ_CODE_SPEECH_INPUT: {
+                if (resultCode == RESULT_OK && null != data) {
+                    ArrayList<String> result = data
+                            .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                    Log.e(TAG, result.get(0));
+                }
+                break;
+            }
+        }
+    }
+
     //==============================================================================================
     // Graphic Face Tracker
     //==============================================================================================
@@ -346,14 +366,25 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                     flag = false;
                     count = 0;
                 }
-            }    
+            }
 
             if(mHistory.size() ==100){
-                Pair<Long, Boolean> last = mHistory.get(mHistory.size() -1 );
-                Pair<Long, Boolean> first = mHistory.get(0);
-                Log.e(TAG, last.first - first.first + "");
+//                Pair<Long, Boolean> last = mHistory.get(mHistory.size() -1 );
+//                Pair<Long, Boolean> first = mHistory.get(0);
+//                Log.e(TAG, last.first - first.first + "");
+                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.audio);
+                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        Log.e(TAG, "Question played");
+                        startSpeechInput();
+                        mp.release();
+                    }
+                });
+                mediaPlayer.start();
                 mHistory.clear();
             }
+
 
             //
 //           Tuple tuple = new Tuple(epoch,eyeClosed);
@@ -379,6 +410,19 @@ public final class FaceTrackerActivity extends AppCompatActivity {
 //            }
 
         }
+
+        private void startSpeechInput() {
+            Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+            intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                    RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+            intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+            try {
+                startActivityForResult(intent, REQ_CODE_SPEECH_INPUT);
+            } catch (ActivityNotFoundException ae) {
+                ae.printStackTrace();
+            }
+        }
+
 
         /**
          * Hide the graphic when the corresponding face was not detected.  This can happen for

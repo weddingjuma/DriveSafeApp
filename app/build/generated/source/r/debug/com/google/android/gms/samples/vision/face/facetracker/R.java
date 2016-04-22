@@ -2804,8 +2804,9 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f030030;
     }
     public static final class raw {
-        public static final int beat_02=0x7f050000;
-        public static final int gtm_analytics=0x7f050001;
+        public static final int audio=0x7f050000;
+        public static final int beat_02=0x7f050001;
+        public static final int gtm_analytics=0x7f050002;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f060000;
