@@ -58,6 +58,14 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        <activity
+            android:name=".SurveyActivity"
+            android:label="@string/title_activity_survey"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.google.android.gms.samples.vision.face.facetracker.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -61,7 +61,6 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     private final int REQ_CODE_SPEECH_INPUT = 100;
 
     private CameraSource mCameraSource = null;
-    protected MediaPlayer mPlayer;
     private CameraSourcePreview mPreview;
     private GraphicOverlay mGraphicOverlay;
     private boolean flag = false;
@@ -351,64 +350,71 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                 Log.e(TAG, eyeClosed + "");
 
             }
-            if( flag == false && eyeClosed == true ){
+            if( !flag && eyeClosed ){
                 flag = true;
                 count=1;
-            }else if(flag == true && eyeClosed == true){
+                Log.e(TAG, "count = " + count);
+            }else if(flag && eyeClosed){
                 count++;
+                Log.e(TAG, "count = " + count);
                 if(count >=5){
                     Log.e(TAG, "Alarm!!!!!!!!");
+                    try {
+                        Thread alarmThread = new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                MediaPlayer alarmPlayer = MediaPlayer.create(getApplicationContext(), R.raw.alamsound);
+                                alarmPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer mp) {
+                                        Log.e(TAG, "Alarm played");
+                                        mp.release();
+                                    }
+                                });
+                                alarmPlayer.start();
+                            }
+                        });
+                        alarmThread.start();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     count=0;
+                    Log.e(TAG, "count = " + count);
                     flag = false;
                 }
-            }else if(flag == true && eyeClosed == false) {
+            }else if(flag && !eyeClosed) {
                 if (count < 5) {
                     flag = false;
                     count = 0;
                 }
             }
 
-            if(mHistory.size() ==100){
+            if(mHistory.size() ==500){
 //                Pair<Long, Boolean> last = mHistory.get(mHistory.size() -1 );
 //                Pair<Long, Boolean> first = mHistory.get(0);
 //                Log.e(TAG, last.first - first.first + "");
-                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.audio);
-                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        Log.e(TAG, "Question played");
-                        startSpeechInput();
-                        mp.release();
-                    }
-                });
-                mediaPlayer.start();
+                try {
+                    Thread qThread = new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.audio);
+                            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                @Override
+                                public void onCompletion(MediaPlayer mp) {
+                                    Log.e(TAG, "Question played");
+                                    startSpeechInput();
+                                    mp.release();
+                                }
+                            });
+                            mediaPlayer.start();
+                        }
+                    });
+                    qThread.start();
+                } catch (Exception e){
+                    e.printStackTrace();
+                }
                 mHistory.clear();
             }
-
-
-            //
-//           Tuple tuple = new Tuple(epoch,eyeClosed);
-//            mTuples.add(tuple);
-//            if(mCount1 >=30) {
-//                if(mCount2>20) {
-////                    log.e(TAG, "Sleepy eyes detected!");
-//                    if (mPlayer == null) {
-//                        mPlayer = MediaPlayer.create(getApplicationContext(), R.raw.beat_02);
-//                        mPlayer.setLooping(true);
-//                        mPlayer.start();
-//                    } else if(!mPlayer.isPlaying()) {
-//                        mPlayer.start();
-//                    }
-//                }
-//                mCount1 = 0;
-//                mCount2 = 0;
-//            }else{
-//                mCount1++;
-//                if(mFaceGraphic.eyeClosed()){
-//                    mCount2++;
-//                }
-//            }
-
         }
 
         private void startSpeechInput() {
