@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:keepScreenOn="true">
 
-  <com.google.android.gms.samples.vision.face.facetracker.ui.camera.CameraSourcePreview
+    <com.google.android.gms.samples.vision.face.facetracker.ui.camera.CameraSourcePreview
       android:id="@+id/preview"
       android:layout_width="match_parent"
       android:layout_height="match_parent">
@@ -21,4 +21,4 @@
   </com.google.android.gms.samples.vision.face.facetracker.ui.camera.CameraSourcePreview>
 
 </LinearLayout>
-<!-- From: file:/Users/owenwang/Documents/CS528/FaceTracker/app/src/main/res/layout/main.xml -->
+<!-- From: file:/R:/528_pro/DriveSafeApp/app/src/main/res/layout/main.xml -->
