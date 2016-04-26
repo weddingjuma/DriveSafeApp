@@ -906,8 +906,8 @@ int layout select_dialog_singlechoice_material 0x7f030031
 int layout support_simple_spinner_dropdown_item 0x7f030032
 int menu menu_main 0x7f0d0000
 int menu menu_survey 0x7f0d0001
-int raw audio 0x7f050000
-int raw beat_02 0x7f050001
+int raw alamsound 0x7f050000
+int raw audio 0x7f050001
 int raw gtm_analytics 0x7f050002
 int string abc_action_bar_home_description 0x7f060000
 int string abc_action_bar_home_description_format 0x7f060001

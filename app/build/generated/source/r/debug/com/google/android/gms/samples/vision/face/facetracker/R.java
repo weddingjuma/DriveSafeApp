@@ -2828,8 +2828,8 @@ containing a value of this type.
         public static final int menu_survey=0x7f0d0001;
     }
     public static final class raw {
-        public static final int audio=0x7f050000;
-        public static final int beat_02=0x7f050001;
+        public static final int alamsound=0x7f050000;
+        public static final int audio=0x7f050001;
         public static final int gtm_analytics=0x7f050002;
     }
     public static final class string {

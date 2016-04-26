@@ -1,11 +1,23 @@
 package com.google.android.gms.samples.vision.face.facetracker;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.RadioGroup;
 
 public class SurveyActivity extends AppCompatActivity {
+    private static final String TAG = "SurveyActivity";
+    private static final String FREQUENCY_PREF = "Frequency";
+
+    private Button submitBtn;
+    private RadioGroup group1;
+    private RadioGroup group2;
+    private SharedPreferences.Editor editor =
+            this.getPreferences(Context.MODE_PRIVATE).edit();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
