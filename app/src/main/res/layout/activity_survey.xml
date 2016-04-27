@@ -8,50 +8,67 @@
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:orientation="vertical"
                 android:gravity="center_horizontal"
-                tools:context="com.google.android.gms.samples.vision.face.facetracker.SurveyActivity">
+                tools:context="com.google.android.gms.samples.vision.face.facetracker.SurveyActivity"
+    android:background="@drawable/surveyback">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tiredlevel"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:text="Please select tired level"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000" />
     <RadioGroup
         android:id="@+id/group1"
-        android:layout_width="match_parent"
+        android:layout_width="490dp"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/verytired"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:drawableRight="@drawable/verytired"
+
+            android:text="Very Tired"
+            android:textColor="#0a0a0a" />
+
+        <RadioButton
+            android:id="@+id/bittired"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:drawableRight="@drawable/abittired"
+            android:text="A Bit Tired"
+            android:textColor="#030303" />
 
         <RadioButton
             android:id="@+id/exhausted"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableRight="@drawable/exhausted"/>
-        <RadioButton
-            android:id="@+id/verytired"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:drawableRight="@drawable/exhausted"
 
-            android:drawableRight="@drawable/verytired"/>
-        <RadioButton
-            android:id="@+id/bittired"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableRight="@drawable/abittired"/>
+            android:text="Exhausted"
+            android:checked="false"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#030303" />
+
         <RadioButton
             android:id="@+id/nottired"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableRight="@drawable/nottired"/>
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:drawableRight="@drawable/nottired"
+            android:text="Very Tired"
+            android:checked="false"
+            android:textColor="#030303" />
     </RadioGroup>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:text="Please select road type"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000" />
     <RadioGroup
         android:id="@+id/group2"
         android:layout_width="match_parent"
@@ -62,22 +79,25 @@
 
         <RadioButton
             android:id="@+id/local"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="Local"/>
+            android:text="Local"
+            android:textColor="#050505" />
         <RadioButton
             android:id="@+id/highway"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Highway"/>
+            android:text="Highway"
+            android:textColor="#050505" />
     </RadioGroup>
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/group2"
         android:text="Submit"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="#4742ff" />
 
 </LinearLayout>

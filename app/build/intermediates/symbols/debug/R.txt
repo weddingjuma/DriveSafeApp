@@ -668,11 +668,12 @@ int drawable mr_ic_play_dark 0x7f020084
 int drawable mr_ic_play_light 0x7f020085
 int drawable mr_ic_settings_dark 0x7f020086
 int drawable mr_ic_settings_light 0x7f020087
-int drawable notification_template_icon_bg 0x7f02008c
+int drawable notification_template_icon_bg 0x7f02008d
 int drawable nottired 0x7f020088
 int drawable powered_by_google_dark 0x7f020089
 int drawable powered_by_google_light 0x7f02008a
-int drawable verytired 0x7f02008b
+int drawable surveyback 0x7f02008b
+int drawable verytired 0x7f02008c
 int id action0 0x7f0c00a4
 int id action_bar 0x7f0c0072
 int id action_bar_activity_content 0x7f0c0000
@@ -696,7 +697,7 @@ int id alertTitle 0x7f0c0062
 int id always 0x7f0c0037
 int id art 0x7f0c009b
 int id beginning 0x7f0c0030
-int id bittired 0x7f0c008a
+int id bittired 0x7f0c0089
 int id book_now 0x7f0c0048
 int id bottom 0x7f0c001b
 int id buttonPanel 0x7f0c0068
@@ -731,7 +732,7 @@ int id end 0x7f0c001f
 int id end_padder 0x7f0c00b0
 int id enterAlways 0x7f0c0015
 int id enterAlwaysCollapsed 0x7f0c0016
-int id exhausted 0x7f0c0088
+int id exhausted 0x7f0c008a
 int id exitUntilCollapsed 0x7f0c0017
 int id expand_activities_button 0x7f0c0059
 int id expanded_menu 0x7f0c0069
@@ -847,7 +848,7 @@ int id topLayout 0x7f0c0092
 int id topPanel 0x7f0c0060
 int id up 0x7f0c0009
 int id useLogo 0x7f0c0014
-int id verytired 0x7f0c0089
+int id verytired 0x7f0c0088
 int id view_offset_helper 0x7f0c000a
 int id withText 0x7f0c003b
 int id wrap_content 0x7f0c003e

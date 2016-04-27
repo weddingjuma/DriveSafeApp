@@ -2580,11 +2580,12 @@ containing a value of this type.
         public static final int mr_ic_play_light=0x7f020085;
         public static final int mr_ic_settings_dark=0x7f020086;
         public static final int mr_ic_settings_light=0x7f020087;
-        public static final int notification_template_icon_bg=0x7f02008c;
+        public static final int notification_template_icon_bg=0x7f02008d;
         public static final int nottired=0x7f020088;
         public static final int powered_by_google_dark=0x7f020089;
         public static final int powered_by_google_light=0x7f02008a;
-        public static final int verytired=0x7f02008b;
+        public static final int surveyback=0x7f02008b;
+        public static final int verytired=0x7f02008c;
     }
     public static final class id {
         public static final int action0=0x7f0c00a4;
@@ -2610,7 +2611,7 @@ containing a value of this type.
         public static final int always=0x7f0c0037;
         public static final int art=0x7f0c009b;
         public static final int beginning=0x7f0c0030;
-        public static final int bittired=0x7f0c008a;
+        public static final int bittired=0x7f0c0089;
         public static final int book_now=0x7f0c0048;
         public static final int bottom=0x7f0c001b;
         public static final int buttonPanel=0x7f0c0068;
@@ -2645,7 +2646,7 @@ containing a value of this type.
         public static final int end_padder=0x7f0c00b0;
         public static final int enterAlways=0x7f0c0015;
         public static final int enterAlwaysCollapsed=0x7f0c0016;
-        public static final int exhausted=0x7f0c0088;
+        public static final int exhausted=0x7f0c008a;
         public static final int exitUntilCollapsed=0x7f0c0017;
         public static final int expand_activities_button=0x7f0c0059;
         public static final int expanded_menu=0x7f0c0069;
@@ -2761,7 +2762,7 @@ containing a value of this type.
         public static final int topPanel=0x7f0c0060;
         public static final int up=0x7f0c0009;
         public static final int useLogo=0x7f0c0014;
-        public static final int verytired=0x7f0c0089;
+        public static final int verytired=0x7f0c0088;
         public static final int view_offset_helper=0x7f0c000a;
         public static final int withText=0x7f0c003b;
         public static final int wrap_content=0x7f0c003e;
