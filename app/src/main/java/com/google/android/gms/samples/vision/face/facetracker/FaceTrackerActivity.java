@@ -23,10 +23,12 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.speech.RecognizerIntent;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
@@ -56,7 +58,7 @@ import java.util.Locale;
  * overlay graphics to indicate the position, size, and ID of each face.
  */
 public final class FaceTrackerActivity extends AppCompatActivity {
-    private static final String TAG = "FaceTracker";
+    private static final String TAG = FaceTrackerActivity.class.getSimpleName();
 
     private final int REQ_CODE_SPEECH_INPUT = 100;
 
@@ -68,6 +70,8 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     private static final int RC_HANDLE_GMS = 9001;
     // permission request codes need to be < 256
     private static final int RC_HANDLE_CAMERA_PERM = 2;
+
+    private int frequency;
 
 //Added by Hongmei
     //private Handler mHandler;
@@ -97,6 +101,13 @@ public final class FaceTrackerActivity extends AppCompatActivity {
             Log.e(TAG, "Needs permission");
             requestCameraPermission();
         }
+
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        frequency = sharedPref.getInt(
+                getString(R.string.frequency_pref_key),
+                1000  // Defaul value
+        );
+        Log.e(TAG, "frequency = " + frequency);
     }
 
     /**

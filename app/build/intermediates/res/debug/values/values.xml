@@ -338,6 +338,7 @@
     <!-- From: file:/D:/CS528/DriveSafeApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
+    <string name="app_name">Drive Safe</string>
     <!-- From: file:/D:/CS528/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
@@ -391,7 +392,7 @@
     <string name="decline">Decline</string>
     <!-- From: file:/D:/CS528/DriveSafeApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="hello_world">Hello world!</string>
+    <string name="frequency_pref_key">Frequency</string>
     <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
     <!-- From: file:/D:/CS528/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>

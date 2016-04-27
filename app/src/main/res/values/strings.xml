@@ -6,7 +6,9 @@
     <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
     <string name="title_activity_main">MainActivity</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Drive Safe</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_survey">SurveyActivity</string>
+
+    <string name="frequency_pref_key">Frequency</string>
 </resources>
