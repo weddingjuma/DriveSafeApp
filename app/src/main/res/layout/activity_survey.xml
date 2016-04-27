@@ -30,7 +30,8 @@
             android:layout_height="70dp"
             android:drawableRight="@drawable/verytired"
 
-            android:text="Very Tired"
+            android:text="Exhausted"
+
             android:textColor="#0a0a0a" />
 
         <RadioButton
@@ -38,7 +39,8 @@
             android:layout_width="180dp"
             android:layout_height="70dp"
             android:drawableRight="@drawable/abittired"
-            android:text="A Bit Tired"
+            android:text="Very Tired"
+
             android:textColor="#030303" />
 
         <RadioButton
@@ -46,8 +48,9 @@
             android:layout_width="180dp"
             android:layout_height="70dp"
             android:drawableRight="@drawable/exhausted"
+            android:text="A Bit Tired"
 
-            android:text="Exhausted"
+
             android:checked="false"
             android:layout_gravity="center_horizontal"
             android:textColor="#030303" />
@@ -57,7 +60,7 @@
             android:layout_width="180dp"
             android:layout_height="70dp"
             android:drawableRight="@drawable/nottired"
-            android:text="Very Tired"
+            android:text="Not Tired"
             android:checked="false"
             android:textColor="#030303" />
     </RadioGroup>

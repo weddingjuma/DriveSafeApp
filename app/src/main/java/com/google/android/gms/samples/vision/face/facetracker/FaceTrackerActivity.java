@@ -400,7 +400,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                 }
             }
 
-            if(mHistory.size() ==500){
+            if(mHistory.size() ==300){
 //                Pair<Long, Boolean> last = mHistory.get(mHistory.size() -1 );
 //                Pair<Long, Boolean> first = mHistory.get(0);
 //                Log.e(TAG, last.first - first.first + "");
