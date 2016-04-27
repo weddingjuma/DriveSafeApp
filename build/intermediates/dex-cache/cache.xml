@@ -2,200 +2,200 @@
 <items version="2" >
 
     <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-c625620c73ccd3c5f2ef6be1900e8ceb15efbed3.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-64022fc70c177dc865bb50048aab80679d9dcc53.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-df6e233394a5b63b8f12aa34b8cac8afb5be5063.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0-a49a29da911e1f62b67998a071acb19bc108be34.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-5c51fa85b907e548a055544a8d7e8ddb5e48dffb.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-a7ad6652d0027f973349be20a1e60d374b38b1aa.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-f53f3537f8fed66af0633fb81da8767b9ab5a41c.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-dda3bcd266b3b0bbe93112c61a218d975e80995b.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\design\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-098cd177507bd1b06189dcc0aa60eb620bdf2eb6.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-31c453d9c56c99d31bfa0cae1cc8bde998c753e3.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-9c2b297697082e1c0c21ecb1324000c142d703cb.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-b278dd3d67aa36e07f06e826ca6094f2ce2c4ed9.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-58f00504bc5f6dca2bf6f68e0ff9fad6320e9fbc.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2e24e5f1b11170163028277de63f709e42525db4">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-1e384e4f9184d2eae82245902993eae83cf80f39.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-2e89c4e67db3f5dcdb295eed547467625426f272.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-a10e364181180058015bf2beed4ea6187187310e.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-9244fbd1cf970d766e2e9b5c6536a64826764bdd.jar" />
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-9e9687f8dcf75d31c58ec80a439ad0d1c44c43fb.jar" />
     </item>
     <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-2cca305aeb35a7b227ae173a6863091c5999279f.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\jars\classes.jar"
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-b78e1739eb10686d427edea2828dcbfde7646bae.jar" />
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-80547d56004023b8a744247a256663d5743ad1fc.jar" />
     </item>
     <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\jars\classes.jar"
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="c2ac04c5b232f6f0658ee4f1c13be09cd76406e2">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-7d5e9d4e7189ef9a642ace1e53359467a4bc5228.jar" />
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-9ba56cde974f9a1bae997a3ac002d61bc6a9e5bb.jar" />
     </item>
     <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-684bce43361ce025db0ecd7af7908e20a026fd43.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-88d78b8b3c4763de0a6b7b4601a0d027764421b2.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-4f63cbf6179b9672f1a21ccd57a9ca96f859a784.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-620183cadd7ffff8d9dc38b25cae7b4d72a63706.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.8.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-557d437e8b337310f4c2f4e032b1c32b6d68fda7.jar" />
-    </item>
-    <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\jars\classes.jar"
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-771aba7673bdb958a4d53f74d9c0f92e690740e8.jar" />
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-3e105d1843c661cb54db1f8c389b5947ce3b7324.jar" />
     </item>
     <item
-        jar="D:\CS528\DriveSafeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\jars\classes.jar"
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-f4a2dc793848aaf645087fbab2c6d1d46cd286e5.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-ac1e5b5078b43cd8b7b873b73e87824bff4112ce.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2e24e5f1b11170163028277de63f709e42525db4">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-ecaa039e88533fecf61c2e422e0725d56eb2b98d.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-282b5291f0227dde4e92eadf136fa0db4802a27a.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-8c4cfa1f2963b5c3678e5df68f41b618503aff51.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-78a6bf0b9713233ac5466cb5da9c1f18828ce7f6.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-7c51b9b02068aed90aea61373ca79c5dede232dd.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-0c94ff9f62fbb292a1ef47bd0865734d9a41f460.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0-2fc91c579482f32fa0dfa9c945fb4fcc8941adb7.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-ab621fbcba14c8b52a83453e8b9ce5a257046829.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-96483a03e82427a2c2b76bb75858c17851240cdc.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-ffcdc6354b8da451642843184ed08c2582644446.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-744f87d6c868f6e22dbe9e04d1c61d155e855c12.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-59e5a85b6b30c348a3801c41499868cde65e28f7.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\classes-a8938fdad736315f7d0130f057ece050f6a1aa40.jar" />
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-a70c23c77abe32aa7cacb37edf92fe428f57d7f1.jar" />
     </item>
     <item
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-60ca4fc9fb20c5ec21978b9d8ecf3695104ac3be.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-c98e4c439a18f8c4400e9f6ce3fdf39bcd6c4f7a.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-6b08fa6d887bfb29b2b9d2ae9fea73907684b82f.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-e303f29e31d073344286a846c81af92d59ff1d18.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-8e917b578399e4142d4369e246fc5394d3cb861d.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-cc0cb60c3f5387d809b254949949fd729d68a0d5.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-8a7f017940607030cd41b57fc8c422afb45e5b31.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="D:\CS528\DriveSafeApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0-7cd194c6f3f4f301c835750b93d55cdb37d12acf.jar" />
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0-809b7f979fb7cca75d3d4eb6fef57581738e5fd5.jar" />
+    </item>
+    <item
+        jar="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="/Users/owenwang/Documents/CS528/FaceTracker/app/build/intermediates/pre-dexed/debug/classes-9e19d8b4b2ca2d391666c828198bc9805f49cf0f.jar" />
     </item>
 
 </items>
