@@ -400,7 +400,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                 }
             }
 
-            if(mHistory.size() ==300){
+            if(mHistory.size() ==250){
 //                Pair<Long, Boolean> last = mHistory.get(mHistory.size() -1 );
 //                Pair<Long, Boolean> first = mHistory.get(0);
 //                Log.e(TAG, last.first - first.first + "");
@@ -408,7 +408,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                     Thread qThread = new Thread(new Runnable() {
                         @Override
                         public void run() {
-                            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.audio);
+                            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.question);
                             mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                                 @Override
                                 public void onCompletion(MediaPlayer mp) {
