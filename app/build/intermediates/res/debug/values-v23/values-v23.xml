@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/Users/qian/AndroidStudioProjects/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-v23/values-v23.xml -->
+=======
+    <!-- From: file:/F:/workspace/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-v23/values-v23.xml -->
+>>>>>>> 1397fc57aa1653bab8fe8a7912a20bd2925cc514
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="android:TextAppearance.Material.Widget.Button.Inverse"/>
     <style name="Base.Theme.AppCompat" parent="Base.V23.Theme.AppCompat"/>
