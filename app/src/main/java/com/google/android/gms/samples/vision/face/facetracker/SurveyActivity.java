@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 public class SurveyActivity extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class SurveyActivity extends AppCompatActivity {
     private Button submitBtn;
     private RadioGroup group1;
     private RadioGroup group2;
+    private RadioButton exhausted, verytired, bittired, nottired, local, highway;
     private SharedPreferences.Editor editor;
 
 
@@ -31,6 +33,12 @@ public class SurveyActivity extends AppCompatActivity {
         submitBtn = (Button)findViewById(R.id.submit);
         group1 = (RadioGroup)findViewById(R.id.group1);
         group2 = (RadioGroup)findViewById(R.id.group2);
+        exhausted = (RadioButton)findViewById(R.id.exhausted);
+        verytired = (RadioButton)findViewById(R.id.verytired);
+        bittired = (RadioButton)findViewById(R.id.bittired);
+        nottired = (RadioButton)findViewById(R.id.nottired);
+        local = (RadioButton)findViewById(R.id.local);
+        highway = (RadioButton)findViewById(R.id.highway);
 
         if (submitBtn != null) {
             submitBtn.setOnClickListener(new View.OnClickListener() {
@@ -39,8 +47,21 @@ public class SurveyActivity extends AppCompatActivity {
                     int tiredButton = group1.getCheckedRadioButtonId();
                     int localButton = group2.getCheckedRadioButtonId();
 
-                    // TODO: Define freqency of asking questions by survey results
-                    editor.putInt(getString(R.string.frequency_pref_key), 500);
+                    int frequency = 5000;  // Default
+                    if (tiredButton == exhausted.getId()) {
+                        frequency = 2000;
+                    } else if (tiredButton == verytired.getId()) {
+                        frequency = 4000;
+                    } else if (tiredButton == bittired.getId()) {
+                        frequency = 6000;
+                    } else if (tiredButton == nottired.getId()) {
+                        frequency = 8000;
+                    }
+
+                    if (localButton == highway.getId()) {  // remain same if local
+                        frequency *= 0.5;
+                    }
+                    editor.putInt(getString(R.string.frequency_pref_key), frequency);
                     editor.commit();
 
                     // Go back to MainActivity (Parent Activity)

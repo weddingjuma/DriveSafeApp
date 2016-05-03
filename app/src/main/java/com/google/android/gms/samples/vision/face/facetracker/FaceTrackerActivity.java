@@ -74,13 +74,6 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     private static final int RC_HANDLE_CAMERA_PERM = 2;
     private int frequency;
 
-//Added by Hongmei
-    //private Handler mHandler;
-
-    //==============================================================================================
-    // Activity Methods
-    //==============================================================================================
-
     /**
      * Initializes the UI and initiates the creation of a face detector.
      */
@@ -410,7 +403,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
 //                }
             }
 
-            if(mHistory.size() ==250){
+            if(mHistory.size() == frequency){
                 try {
                     Thread qThread = new Thread(new Runnable() {
                         @Override

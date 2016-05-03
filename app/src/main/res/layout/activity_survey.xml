@@ -25,7 +25,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
         <RadioButton
-            android:id="@+id/verytired"
+            android:id="@+id/exhausted"
             android:layout_width="180dp"
             android:layout_height="70dp"
             android:drawableRight="@drawable/verytired"
@@ -35,7 +35,7 @@
             android:textColor="#0a0a0a" />
 
         <RadioButton
-            android:id="@+id/bittired"
+            android:id="@+id/verytired"
             android:layout_width="180dp"
             android:layout_height="70dp"
             android:drawableRight="@drawable/abittired"
@@ -44,7 +44,7 @@
             android:textColor="#030303" />
 
         <RadioButton
-            android:id="@+id/exhausted"
+            android:id="@+id/bittired"
             android:layout_width="180dp"
             android:layout_height="70dp"
             android:drawableRight="@drawable/exhausted"
