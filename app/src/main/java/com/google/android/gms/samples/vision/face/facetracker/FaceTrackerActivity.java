@@ -65,12 +65,13 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     private CameraSource mCameraSource = null;
     private CameraSourcePreview mPreview;
     private GraphicOverlay mGraphicOverlay;
+    private MediaPlayer alarmPlayer;
+
     private boolean flag = false;
     private int count=0;
     private static final int RC_HANDLE_GMS = 9001;
     // permission request codes need to be < 256
     private static final int RC_HANDLE_CAMERA_PERM = 2;
-
     private int frequency;
 
 //Added by Hongmei
@@ -194,9 +195,11 @@ public final class FaceTrackerActivity extends AppCompatActivity {
      */
     @Override
     protected void onPause() {
-        super.onPause();
         mPreview.stop();
-
+        if (alarmPlayer != null && alarmPlayer.isPlaying()) {
+            alarmPlayer.pause();
+        }
+        super.onPause();
     }
 
     /**
@@ -205,10 +208,15 @@ public final class FaceTrackerActivity extends AppCompatActivity {
      */
     @Override
     protected void onDestroy() {
-        super.onDestroy();
+        if (alarmPlayer != null && alarmPlayer.isPlaying()) {
+            alarmPlayer.stop();
+            alarmPlayer.release();
+            alarmPlayer = null;
+        }
         if (mCameraSource != null) {
             mCameraSource.release();
         }
+        super.onDestroy();
     }
 
     /**
@@ -368,24 +376,26 @@ public final class FaceTrackerActivity extends AppCompatActivity {
             }else if(flag && eyeClosed){
                 count++;
                 Log.e(TAG, "count = " + count);
-                if(count >=5){
+                if(count >=5 && (alarmPlayer == null || !alarmPlayer.isPlaying())){
                     Log.e(TAG, "Alarm!!!!!!!!");
                     try {
                         Thread alarmThread = new Thread(new Runnable() {
                             @Override
                             public void run() {
-                                MediaPlayer alarmPlayer = MediaPlayer.create(getApplicationContext(), R.raw.alamsound);
-                                alarmPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                                    @Override
-                                    public void onCompletion(MediaPlayer mp) {
-                                        Log.e(TAG, "Alarm played");
-                                        mp.release();
-                                    }
-                                });
+                                if (alarmPlayer == null) {
+                                    alarmPlayer = MediaPlayer.create(getApplicationContext(), R.raw.alamsound);
+                                    alarmPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                        @Override
+                                        public void onCompletion(MediaPlayer mp) {
+                                            Log.e(TAG, "Alarm played");
+                                        }
+                                    });
+                                }
                                 alarmPlayer.start();
                             }
                         });
                         alarmThread.start();
+                        Log.e(TAG, alarmThread.getName() + " is running");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -394,16 +404,13 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                     flag = false;
                 }
             }else if(flag && !eyeClosed) {
-                if (count < 5) {
+//                if (count < 5) {
                     flag = false;
                     count = 0;
-                }
+//                }
             }
 
             if(mHistory.size() ==250){
-//                Pair<Long, Boolean> last = mHistory.get(mHistory.size() -1 );
-//                Pair<Long, Boolean> first = mHistory.get(0);
-//                Log.e(TAG, last.first - first.first + "");
                 try {
                     Thread qThread = new Thread(new Runnable() {
                         @Override
