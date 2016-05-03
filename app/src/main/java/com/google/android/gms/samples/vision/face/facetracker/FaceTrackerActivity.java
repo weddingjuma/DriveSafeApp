@@ -102,7 +102,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         frequency = sharedPref.getInt(
                 getString(R.string.frequency_pref_key),
-                 DEFAULT_FREQUENCY // Default value
+                 DEFAULT_FREQ // Default value
         );
         Log.d(TAG, "frequency = " + frequency);
 
@@ -326,7 +326,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     Log.d(TAG, result.get(0));
                     if (result.contains("yes")) {
-                        frequency = (int)(Math.max(MIN_FREQUENCY, frequency * 0.8));
+                        frequency = (int)(Math.max(MIN_FREQ, frequency * 0.8));
                     } else if (result.contains("no")) {
                         frequency *= 1.2;
                     }

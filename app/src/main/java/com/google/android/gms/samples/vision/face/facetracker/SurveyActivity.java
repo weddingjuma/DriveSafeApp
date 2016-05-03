@@ -48,15 +48,15 @@ public class SurveyActivity extends AppCompatActivity {
                     int tiredButton = group1.getCheckedRadioButtonId();
                     int localButton = group2.getCheckedRadioButtonId();
 
-                    int frequency = DEFAULT_FREQUENCY;  // Default
+                    int frequency = DEFAULT_FREQ;  // Default
                     if (tiredButton == exhausted.getId()) {
-                        frequency = EXHAUSTED_FREQUENCY;
+                        frequency = EXHAUSTED_FREQ;
                     } else if (tiredButton == verytired.getId()) {
-                        frequency = VERYTIRED_FREQUENCY;
+                        frequency = VERYTIRED_FREQ;
                     } else if (tiredButton == bittired.getId()) {
-                        frequency = BITTIRED_FREQUENCY;
+                        frequency = BITTIRED_FREQ;
                     } else if (tiredButton == nottired.getId()) {
-                        frequency = NOTTIRED_FREQUENCY;
+                        frequency = NOTTIRED_FREQ;
                     }
 
                     if (localButton == highway.getId()) {  // remain same if local
