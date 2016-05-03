@@ -2661,7 +2661,7 @@ containing a value of this type.
         public static final int grayscale=0x7f0c0053;
         public static final int group1=0x7f0c008a;
         public static final int group2=0x7f0c008f;
-        public static final int helpButton=0x7f0c0087;
+        public static final int helpButton=0x7f0c0081;
         public static final int highway=0x7f0c0091;
         public static final int holo_dark=0x7f0c003f;
         public static final int holo_light=0x7f0c0040;
@@ -2671,14 +2671,14 @@ containing a value of this type.
         public static final int icon=0x7f0c005d;
         public static final int ifRoom=0x7f0c0039;
         public static final int image=0x7f0c005a;
-        public static final int imageView=0x7f0c0081;
+        public static final int imageView=0x7f0c0082;
         public static final int info=0x7f0c00b2;
         public static final int left=0x7f0c0021;
         public static final int line1=0x7f0c00ac;
         public static final int line3=0x7f0c00b0;
         public static final int linearLayout=0x7f0c0088;
-        public static final int linearLayoutBottom=0x7f0c0082;
-        public static final int linearLayoutTop=0x7f0c0085;
+        public static final int linearLayoutBottom=0x7f0c0083;
+        public static final int linearLayoutTop=0x7f0c0086;
         public static final int listMode=0x7f0c000b;
         public static final int list_item=0x7f0c005c;
         public static final int local=0x7f0c0090;
@@ -2691,7 +2691,7 @@ containing a value of this type.
         public static final int media_route_volume_slider=0x7f0c00a3;
         public static final int middle=0x7f0c0031;
         public static final int mini=0x7f0c002f;
-        public static final int monitorButton=0x7f0c0086;
+        public static final int monitorButton=0x7f0c0087;
         public static final int monochrome=0x7f0c0054;
         public static final int multiply=0x7f0c0025;
         public static final int never=0x7f0c003a;
@@ -2706,7 +2706,7 @@ containing a value of this type.
         public static final int production=0x7f0c0041;
         public static final int progress_circular=0x7f0c0006;
         public static final int progress_horizontal=0x7f0c0007;
-        public static final int quitButton=0x7f0c0084;
+        public static final int quitButton=0x7f0c0085;
         public static final int radio=0x7f0c006c;
         public static final int right=0x7f0c0022;
         public static final int route_name=0x7f0c009a;
@@ -2747,7 +2747,7 @@ containing a value of this type.
         public static final int submit=0x7f0c0092;
         public static final int submit_area=0x7f0c007d;
         public static final int subtitle=0x7f0c00a1;
-        public static final int surveyButton=0x7f0c0083;
+        public static final int surveyButton=0x7f0c0084;
         public static final int tabMode=0x7f0c000d;
         public static final int terrain=0x7f0c0036;
         public static final int test=0x7f0c0044;
