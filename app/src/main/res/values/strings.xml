@@ -13,7 +13,4 @@
     <string name="frequency_pref_key">Frequency</string>
     <string name="title_activity_help">HelpActivity</string>
 
-    <string name="hello_world">
-
-    </string>
 </resources>

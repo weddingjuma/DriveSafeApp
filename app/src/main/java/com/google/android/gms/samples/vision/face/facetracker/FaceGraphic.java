@@ -85,21 +85,6 @@ class FaceGraphic extends GraphicOverlay.Graphic {
         mFace = face;
         postInvalidate();
     }
-    // Added by Hongmei
-    /**
-     * Find out if the user's eye closed
-     */
-//    boolean eyeClosed(){
-//        if (mFace == null) {
-//            return false;
-//        } else if ((mFace.getIsRightEyeOpenProbability()< 0.1) && (mFace.getIsLeftEyeOpenProbability()<0.1)) {
-//            return true;
-//        }
-//        else {
-//            return false;
-//        }
-//    }
-
 
     /**
      * Draws the face annotations for position on the supplied canvas.
@@ -119,7 +104,6 @@ class FaceGraphic extends GraphicOverlay.Graphic {
         canvas.drawText("happiness: " + String.format("%.2f", face.getIsSmilingProbability()), x - ID_X_OFFSET, y - ID_Y_OFFSET, mIdPaint);
         canvas.drawText("right eye: " + String.format("%.2f", face.getIsRightEyeOpenProbability()), x + ID_X_OFFSET * 2, y + ID_Y_OFFSET * 2, mIdPaint);
         canvas.drawText("left eye: " + String.format("%.2f", face.getIsLeftEyeOpenProbability()), x - ID_X_OFFSET*2, y - ID_Y_OFFSET*2, mIdPaint);
-//        canvas.drawText("eye closed:" + String.format("%b", this.eyeClosed()), x+ ID_X_OFFSET*3, y+ ID_Y_OFFSET*3,mIdPaint);
         // Draws a bounding box around the face.
         float xOffset = scaleX(face.getWidth() / 2.0f);
         float yOffset = scaleY(face.getHeight() / 2.0f);

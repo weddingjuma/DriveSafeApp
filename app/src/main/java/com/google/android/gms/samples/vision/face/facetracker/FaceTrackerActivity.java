@@ -174,18 +174,12 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                 .build();
     }
 
-    /**
-     * Restarts the camera.
-     */
     @Override
     protected void onResume() {
         super.onResume();
         startCameraSource();
     }
 
-    /**
-     * Stops the camera.
-     */
     @Override
     protected void onPause() {
         mPreview.stop();
@@ -290,6 +284,9 @@ public final class FaceTrackerActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Callback when speech recognizer receives speech input from user.
+     */
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
@@ -362,10 +359,6 @@ public final class FaceTrackerActivity extends AppCompatActivity {
             mOverlay.add(mFaceGraphic);
             mFaceGraphic.updateFace(face);
 
-            if (eyeClosed){
-                Log.d(TAG, eyeClosed + "");
-
-            }
             if(!flag && eyeClosed ){
                 flag = true;
                 count=1;

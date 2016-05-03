@@ -1,8 +1,5 @@
 package com.google.android.gms.samples.vision.face.facetracker;
 
-/**
- * Created by T440 on 2016/4/22.
- */
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.concurrent.locks.ReentrantLock;
