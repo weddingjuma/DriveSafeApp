@@ -67,8 +67,6 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     private CameraSourcePreview mPreview;
     private GraphicOverlay mGraphicOverlay;
     private MediaPlayer alarmPlayer;
-    private PackageManager pm;
-    private ComponentName compPhoneCall;
 
     private boolean flag = false;
     private int count=0;
@@ -105,10 +103,6 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                  DEFAULT_FREQ // Default value
         );
         Log.d(TAG, "frequency = " + frequency);
-
-        pm = getPackageManager();
-        compPhoneCall = new ComponentName(getApplicationContext(),
-                PhoneCallReceiver.class);
     }
 
     /**
@@ -180,17 +174,6 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                 .build();
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        // Enable phone call receiver
-        pm.setComponentEnabledSetting(
-                compPhoneCall,
-                PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
-                PackageManager.DONT_KILL_APP
-        );
-    }
-
     /**
      * Restarts the camera.
      */
@@ -210,16 +193,6 @@ public final class FaceTrackerActivity extends AppCompatActivity {
             alarmPlayer.pause();
         }
         super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        pm.setComponentEnabledSetting(
-                compPhoneCall,
-                PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
-                PackageManager.DONT_KILL_APP
-        );
     }
 
     /**
@@ -393,7 +366,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                 Log.d(TAG, eyeClosed + "");
 
             }
-            if( !flag && eyeClosed ){
+            if(!flag && eyeClosed ){
                 flag = true;
                 count=1;
                 Log.d(TAG, "count = " + count);
