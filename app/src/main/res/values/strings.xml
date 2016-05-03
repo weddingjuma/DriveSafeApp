@@ -13,12 +13,7 @@
     <string name="frequency_pref_key">Frequency</string>
     <string name="title_activity_help">HelpActivity</string>
 
-    <string name="hello_world">Main user interface:
+    <string name="hello_world">
 
-	Survey button- input tired level and road type.
-	Monitor button- start monitoring your drowsy eyes.
-	Quit button- quit Drive Safe App.
-
-Survey is optional. A default of 5 minus per one audio interaction is set. If you take the survey, the audio interaction frequency is determined by the survey results. It ranges from 30 seconds to 15 minus per audio interaction.
-</string>
+    </string>
 </resources>
