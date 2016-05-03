@@ -365,6 +365,14 @@ ADDED from AndroidManifest.xml:63:9
 		ADDED from AndroidManifest.xml:66:13
 	android:name
 		ADDED from AndroidManifest.xml:64:13
+activity#com.google.android.gms.samples.vision.face.facetracker.HelpActivity
+ADDED from AndroidManifest.xml:71:9
+	android:label
+		ADDED from AndroidManifest.xml:73:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:74:13
+	android:name
+		ADDED from AndroidManifest.xml:72:13
 uses-permission#android.permission.INTERNET
 ADDED from com.google.android.gms:play-services-ads:7.8.0:20:5
 MERGED from com.google.android.gms:play-services-analytics:7.8.0:21:5

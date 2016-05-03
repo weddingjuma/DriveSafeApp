@@ -22,7 +22,7 @@
         android:layout_height="240dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayoutBottom"
         android:gravity="bottom">
 
         <Button
@@ -30,9 +30,9 @@
             android:layout_height="fill_parent"
             android:text=""
             android:id="@+id/surveyButton"
-            android:layout_alignTop="@+id/linearLayout"
-            android:layout_toLeftOf="@+id/linearLayout"
-            android:layout_toStartOf="@+id/linearLayout"
+            android:layout_alignTop="@+id/linearLayoutBottom"
+            android:layout_toLeftOf="@+id/linearLayoutBottom"
+            android:layout_toStartOf="@+id/linearLayoutBottom"
             android:layout_weight="1"
             android:background="@null" />
 
@@ -41,6 +41,39 @@
             android:layout_height="fill_parent"
             android:text=""
             android:id="@+id/quitButton"
+            android:layout_above="@+id/linearLayoutBottom"
+            android:layout_toLeftOf="@+id/linearLayoutBottom"
+            android:layout_toStartOf="@+id/linearLayoutBottom"
+            android:layout_weight="1"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/linearLayoutTop"
+        android:gravity="top">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text=""
+            android:id="@+id/monitorButton"
+            android:layout_alignTop="@+id/linearLayoutTop"
+            android:layout_toLeftOf="@+id/linearLayoutTop"
+            android:layout_toStartOf="@+id/linearLayoutTop"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text=""
+            android:id="@+id/helpButton"
             android:layout_above="@+id/linearLayout"
             android:layout_toLeftOf="@+id/linearLayout"
             android:layout_toStartOf="@+id/linearLayout"
@@ -48,21 +81,21 @@
             android:background="@null" />
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="0dp"
-        android:gravity="top">
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="240dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:gravity="top">-->
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/monitorButton"
-            android:layout_gravity="center_horizontal"
-            android:background="@null" />
-    </LinearLayout>
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/monitorButton"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@null" />-->
+    <!--</LinearLayout>-->
 
 </RelativeLayout>

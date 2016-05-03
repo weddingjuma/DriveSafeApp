@@ -393,6 +393,7 @@
     <!-- From: file:/D:/CS528/DriveSafeApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="frequency_pref_key">Frequency</string>
+    <string name="hello_world">Hello world!</string>
     <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
     <!-- From: file:/D:/CS528/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -420,6 +421,7 @@
     <string name="store_picture_title">Save image</string>
     <!-- From: file:/D:/CS528/DriveSafeApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_help">HelpActivity</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_survey">SurveyActivity</string>
     <!-- From: file:/D:/CS528/DriveSafeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/res/values/wallet_strings.xml -->

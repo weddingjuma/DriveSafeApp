@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button surveyButton;
     private Button exitButton;
     private Button monitorButton;
+    private Button helpButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         surveyButton = (Button) findViewById(R.id.surveyButton);
         exitButton = (Button) findViewById(R.id.quitButton);
         monitorButton = (Button) findViewById(R.id.monitorButton);
+        helpButton = (Button)findViewById(R.id.helpButton);
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), SurveyActivity.class));
+            }
+        });
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), HelpActivity.class));
             }
         });
     }

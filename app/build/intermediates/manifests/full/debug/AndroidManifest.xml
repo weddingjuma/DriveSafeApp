@@ -80,6 +80,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.google.android.gms.samples.vision.face.facetracker.MainActivity" />
         </activity>
+        <activity
+            android:name="com.google.android.gms.samples.vision.face.facetracker.HelpActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.google.android.gms.samples.vision.face.facetracker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.google.android.gms.samples.vision.face.facetracker.MainActivity" />
+        </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

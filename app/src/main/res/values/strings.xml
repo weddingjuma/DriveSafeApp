@@ -11,4 +11,7 @@
     <string name="title_activity_survey">SurveyActivity</string>
 
     <string name="frequency_pref_key">Frequency</string>
+    <string name="title_activity_help">HelpActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
