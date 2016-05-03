@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import static com.google.android.gms.samples.vision.face.facetracker.Constants.*;
 
 public class SurveyActivity extends AppCompatActivity {
     private static final String TAG = SurveyActivity.class.getSimpleName();
@@ -47,15 +48,15 @@ public class SurveyActivity extends AppCompatActivity {
                     int tiredButton = group1.getCheckedRadioButtonId();
                     int localButton = group2.getCheckedRadioButtonId();
 
-                    int frequency = 5000;  // Default
+                    int frequency = DEFAULT_FREQUENCY;  // Default
                     if (tiredButton == exhausted.getId()) {
-                        frequency = 2000;
+                        frequency = EXHAUSTED_FREQUENCY;
                     } else if (tiredButton == verytired.getId()) {
-                        frequency = 4000;
+                        frequency = VERYTIRED_FREQUENCY;
                     } else if (tiredButton == bittired.getId()) {
-                        frequency = 6000;
+                        frequency = BITTIRED_FREQUENCY;
                     } else if (tiredButton == nottired.getId()) {
-                        frequency = 8000;
+                        frequency = NOTTIRED_FREQUENCY;
                     }
 
                     if (localButton == highway.getId()) {  // remain same if local

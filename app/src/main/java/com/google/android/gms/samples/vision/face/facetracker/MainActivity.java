@@ -14,20 +14,22 @@ import android.widget.Button;
 
 import com.google.android.gms.samples.vision.face.facetracker.R;
 
+/**
+ * @author: Mei Yang, Qian Lu, Hongmei Zong
+ */
+
 public class MainActivity extends AppCompatActivity {
-    private Button surveyButton;
-    private Button exitButton;
-    private Button monitorButton;
-    private Button helpButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        surveyButton = (Button) findViewById(R.id.surveyButton);
-        exitButton = (Button) findViewById(R.id.quitButton);
-        monitorButton = (Button) findViewById(R.id.monitorButton);
-        helpButton = (Button)findViewById(R.id.helpButton);
+
+        Button surveyButton = (Button) findViewById(R.id.surveyButton);
+        Button exitButton = (Button) findViewById(R.id.quitButton);
+        Button monitorButton = (Button) findViewById(R.id.monitorButton);
+        Button helpButton = (Button)findViewById(R.id.helpButton);
+
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

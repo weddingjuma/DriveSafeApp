@@ -47,6 +47,8 @@ import com.google.android.gms.vision.face.FaceDetector;
 import com.google.android.gms.samples.vision.face.facetracker.ui.camera.CameraSourcePreview;
 import com.google.android.gms.samples.vision.face.facetracker.ui.camera.GraphicOverlay;
 
+import static com.google.android.gms.samples.vision.face.facetracker.Constants.*;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -73,7 +75,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     private static final int RC_HANDLE_GMS = 9001;
     // permission request codes need to be < 256
     private static final int RC_HANDLE_CAMERA_PERM = 2;
-    private int frequency;
+    private int frequency;  // frequency of voice interactions
 
     /**
      * Initializes the UI and initiates the creation of a face detector.
@@ -90,19 +92,19 @@ public final class FaceTrackerActivity extends AppCompatActivity {
         // permission is not granted yet, request permission.
         int rc = ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
         if (rc == PackageManager.PERMISSION_GRANTED) {
-            Log.e(TAG, "Has permission");
+            Log.d(TAG, "Has permission");
             createCameraSource();
         } else {
-            Log.e(TAG, "Needs permission");
+            Log.d(TAG, "Needs permission");
             requestCameraPermission();
         }
 
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         frequency = sharedPref.getInt(
                 getString(R.string.frequency_pref_key),
-                5000  // Defaul value
+                 DEFAULT_FREQUENCY // Default value
         );
-        Log.e(TAG, "frequency = " + frequency);
+        Log.d(TAG, "frequency = " + frequency);
 
         pm = getPackageManager();
         compPhoneCall = new ComponentName(getApplicationContext(),
@@ -168,7 +170,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
             // download completes on device.
             Log.w(TAG, "Face detector dependencies are not yet available.");
         } else{
-            Log.e(TAG, "Face detector available");
+            Log.d(TAG, "Face detector available");
         }
 
         mCameraSource = new CameraSource.Builder(context, detector)
@@ -268,7 +270,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
             return;
         }
 
-        Log.e(TAG, "Permission not granted: results len = " + grantResults.length +
+        Log.d(TAG, "Permission not granted: results len = " + grantResults.length +
                 " Result code = " + (grantResults.length > 0 ? grantResults[0] : "(empty)"));
 
         DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
@@ -322,7 +324,12 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                 if (resultCode == RESULT_OK && null != data) {
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    Log.e(TAG, result.get(0));
+                    Log.d(TAG, result.get(0));
+                    if (result.contains("yes")) {
+                        frequency = (int)(Math.max(MIN_FREQUENCY, frequency * 0.8));
+                    } else if (result.contains("no")) {
+                        frequency *= 1.2;
+                    }
                 }
                 break;
             }
@@ -374,7 +381,6 @@ public final class FaceTrackerActivity extends AppCompatActivity {
         public void onUpdate(FaceDetector.Detections<Face> detectionResults, Face face) {
             double right = face.getIsRightEyeOpenProbability();
             double left = face.getIsLeftEyeOpenProbability();
-            //Log.e(TAG, "Right eye = " + right + ", left eye = " + left);
             boolean eyeClosed = (right < 0.1) && (left < 0.1);
 
             Pair<Long, Boolean> entry = new Pair<>(new Date().getTime(), eyeClosed);
@@ -384,18 +390,18 @@ public final class FaceTrackerActivity extends AppCompatActivity {
             mFaceGraphic.updateFace(face);
 
             if (eyeClosed){
-                Log.e(TAG, eyeClosed + "");
+                Log.d(TAG, eyeClosed + "");
 
             }
             if( !flag && eyeClosed ){
                 flag = true;
                 count=1;
-                Log.e(TAG, "count = " + count);
+                Log.d(TAG, "count = " + count);
             }else if(flag && eyeClosed){
                 count++;
-                Log.e(TAG, "count = " + count);
+                Log.d(TAG, "count = " + count);
                 if(count >=5 && (alarmPlayer == null || !alarmPlayer.isPlaying())){
-                    Log.e(TAG, "Alarm!!!!!!!!");
+                    Log.d(TAG, "Alarm!!!!!!!!");
                     try {
                         Thread alarmThread = new Thread(new Runnable() {
                             @Override
@@ -405,7 +411,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                                     alarmPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                                         @Override
                                         public void onCompletion(MediaPlayer mp) {
-                                            Log.e(TAG, "Alarm played");
+                                            Log.d(TAG, "Alarm played");
                                         }
                                     });
                                 }
@@ -413,12 +419,12 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                             }
                         });
                         alarmThread.start();
-                        Log.e(TAG, alarmThread.getName() + " is running");
+                        Log.d(TAG, alarmThread.getName() + " is running");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
                     count=0;
-                    Log.e(TAG, "count = " + count);
+                    Log.d(TAG, "count = " + count);
                     flag = false;
                 }
             }else if(flag && !eyeClosed) {
@@ -437,7 +443,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                             mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                                 @Override
                                 public void onCompletion(MediaPlayer mp) {
-                                    Log.e(TAG, "Question played");
+                                    Log.d(TAG, "Question played");
                                     startSpeechInput();
                                     mp.release();
                                 }
@@ -485,35 +491,4 @@ public final class FaceTrackerActivity extends AppCompatActivity {
             mOverlay.remove(mFaceGraphic);
         }
     }
-//    //==========================Added by Hongmei
-//    //Handler for scheduled EyeCheck
-//    //==========================
-//    private Handler handler = new Handler();
-////    handler.postDelayed(runnable, 100);
-//
-//
-//    private Runnable runnable = new Runnable() {
-//        @Override
-//        public void run() {
-//      /* do what you need to do */
-//
-//      /* and here comes the "trick" */
-//            handler.postDelayed(this, 100);
-//        }
-//    };
-
-//---------------the other handler example----
-//    public void useHandler() {
-//        mHandler = new Handler();
-//        mHandler.postDelayed(mRunnable, 1000);
-//    }
-//    private Runnable mRunnable = new Runnable() {
-//
-//        @Override
-//        public void run() {
-//            Log.e("Handlers", "Calls");
-//            /** Do something **/
-//            mHandler.postDelayed(mRunnable, 1000);
-//        }
-//    };
 }
