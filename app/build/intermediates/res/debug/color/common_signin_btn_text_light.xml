@@ -16,8 +16,4 @@
     <item
         android:color="@color/common_signin_btn_light_text_default" />
 </selector>
-<<<<<<< HEAD
 <!-- From: file:/Users/qian/AndroidStudioProjects/DriveSafeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/color/common_signin_btn_text_light.xml -->
-=======
-<!-- From: file:/F:/workspace/DriveSafeApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/color/common_signin_btn_text_light.xml -->
->>>>>>> 1397fc57aa1653bab8fe8a7912a20bd2925cc514

@@ -26,7 +26,7 @@
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/icon"
-        android:label="FaceTracker"
+        android:label="DriveSafe"
         android:theme="@style/Theme.AppCompat" >
         <meta-data
             android:name="com.google.android.gms.version"

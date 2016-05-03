@@ -1,10 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
-<<<<<<< HEAD
  * Original file: /Users/qian/AndroidStudioProjects/DriveSafeApp/app/src/main/aidl/com/android/internal/telephony/ITelephony.aidl
-=======
- * Original file: F:\\workspace\\DriveSafeApp\\app\\src\\main\\aidl\\com\\android\\internal\\telephony\\ITelephony.aidl
->>>>>>> 1397fc57aa1653bab8fe8a7912a20bd2925cc514
  */
 package com.android.internal.telephony;
 // Declare any non-default types here with import statements

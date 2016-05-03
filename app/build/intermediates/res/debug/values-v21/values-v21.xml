@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
     <!-- From: file:/Users/qian/AndroidStudioProjects/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/res/values-v21/values-v21.xml -->
     <eat-comment/>
     <dimen name="design_navigation_padding_top_default">24dp</dimen>
     <!-- From: file:/Users/qian/AndroidStudioProjects/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-v21/values-v21.xml -->
-=======
-    <!-- From: file:/F:/workspace/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/res/values-v21/values-v21.xml -->
-    <eat-comment/>
-    <dimen name="design_navigation_padding_top_default">24dp</dimen>
-    <!-- From: file:/F:/workspace/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-v21/values-v21.xml -->
->>>>>>> 1397fc57aa1653bab8fe8a7912a20bd2925cc514
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>

@@ -66,8 +66,4 @@
         android:id="@+id/action_divider"
         android:background="?android:attr/dividerHorizontal" />
 </RelativeLayout>
-<<<<<<< HEAD
 <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-release/frameworks/support/v7/appcompat/res/layout/notification_template_big_media_narrow.xml --><!-- From: file:/Users/qian/AndroidStudioProjects/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/layout/notification_template_big_media_narrow.xml -->
-=======
-<!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-release/frameworks/support/v7/appcompat/res/layout/notification_template_big_media_narrow.xml --><!-- From: file:/F:/workspace/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/layout/notification_template_big_media_narrow.xml -->
->>>>>>> 1397fc57aa1653bab8fe8a7912a20bd2925cc514

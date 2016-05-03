@@ -23,8 +23,4 @@
           android:paddingRight="?attr/listPreferredItemPaddingRight"
           android:textAppearance="@style/TextAppearance.AppCompat.Body2"
           android:textColor="?android:textColorSecondary"/>
-<<<<<<< HEAD
 <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-release/frameworks/support/design/res/layout/design_navigation_item_subheader.xml --><!-- From: file:/Users/qian/AndroidStudioProjects/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/res/layout/design_navigation_item_subheader.xml -->
-=======
-<!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-release/frameworks/support/design/res/layout/design_navigation_item_subheader.xml --><!-- From: file:/F:/workspace/DriveSafeApp/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/res/layout/design_navigation_item_subheader.xml -->
->>>>>>> 1397fc57aa1653bab8fe8a7912a20bd2925cc514
