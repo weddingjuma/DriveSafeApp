@@ -20,6 +20,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -27,7 +28,6 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.speech.RecognizerIntent;
 import android.support.design.widget.Snackbar;
@@ -50,7 +50,6 @@ import com.google.android.gms.samples.vision.face.facetracker.ui.camera.GraphicO
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Locale;
 
 /**
@@ -66,6 +65,8 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     private CameraSourcePreview mPreview;
     private GraphicOverlay mGraphicOverlay;
     private MediaPlayer alarmPlayer;
+    private PackageManager pm;
+    private ComponentName compPhoneCall;
 
     private boolean flag = false;
     private int count=0;
@@ -99,9 +100,13 @@ public final class FaceTrackerActivity extends AppCompatActivity {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         frequency = sharedPref.getInt(
                 getString(R.string.frequency_pref_key),
-                1000  // Defaul value
+                5000  // Defaul value
         );
         Log.e(TAG, "frequency = " + frequency);
+
+        pm = getPackageManager();
+        compPhoneCall = new ComponentName(getApplicationContext(),
+                PhoneCallReceiver.class);
     }
 
     /**
@@ -173,13 +178,23 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                 .build();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // Enable phone call receiver
+        pm.setComponentEnabledSetting(
+                compPhoneCall,
+                PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                PackageManager.DONT_KILL_APP
+        );
+    }
+
     /**
      * Restarts the camera.
      */
     @Override
     protected void onResume() {
         super.onResume();
-
         startCameraSource();
     }
 
@@ -193,6 +208,16 @@ public final class FaceTrackerActivity extends AppCompatActivity {
             alarmPlayer.pause();
         }
         super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        pm.setComponentEnabledSetting(
+                compPhoneCall,
+                PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+                PackageManager.DONT_KILL_APP
+        );
     }
 
     /**
